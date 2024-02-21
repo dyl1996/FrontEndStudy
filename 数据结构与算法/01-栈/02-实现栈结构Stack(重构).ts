@@ -1,19 +1,23 @@
 import IStack from "./IStack";
 
 class ArrayStack<T> implements IStack<T> {
+  private data: T[] = [];
+
   push(element: T): void {
-    throw new Error("Method not implemented.");
+    this.data.push(element);
   }
   pop(): T | undefined {
-    throw new Error("Method not implemented.");
+    return this.data.pop();
   }
   peek(): T | undefined {
-    throw new Error("Method not implemented.");
+    return this.data[this.data.length - 1];
   }
   isEmpty(): boolean {
-    throw new Error("Method not implemented.");
+    return this.data.length === 0;
   }
   size(): number {
-    throw new Error("Method not implemented.");
+    return this.data.length;
   }
 }
+
+export default ArrayStack;
