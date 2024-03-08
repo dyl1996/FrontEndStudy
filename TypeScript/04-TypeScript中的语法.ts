@@ -224,4 +224,13 @@ function move(animal: ISwim | IRun) {
     animal.run();
   }
 }
+
+/**
+ * 枚举类型
+ */
+enum Directions {
+  LEFT = 1,
+  right,
+  TOP = "TOP",
+}
 export default {};
