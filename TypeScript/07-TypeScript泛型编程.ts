@@ -43,9 +43,4 @@ function getInfo<T extends ILength>(args: T): T {
 function getObjectProperty<O, K extends keyof O>(o: O, k: K): O[K] {
   return o[k];
 }
-
-/**
- * 映射类型
- */
-
 export default {};
